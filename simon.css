@@ -1,0 +1,17 @@
+.wrapper{
+  position: relative;
+  width: 640px;
+  margin: 0 auto;
+
+}
+
+.back{
+  position: absolute;
+  top: 170px;
+  width: 640px;
+  height: 640px;
+  z-index: 0;
+  border-radius: 310px;
+  background-color: #000;
+
+}

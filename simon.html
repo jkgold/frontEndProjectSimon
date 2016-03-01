@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simon</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="simon.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="back">
+      <div class="pad shape1">
+        <audio preload="auto" class="sound1" data-pad="1">
+          <source src="sounds/mp3/sounds_01.mp3" type="audio/mpeg"/>
+          <source src="sounds/ogg/sounds_01.ogg" type="audio/ogg"/>
+        </audio>
+      </div>
+
+      <div class="pad shape2">
+        <audio preload="auto" class="sound2" data-pad="2">
+          <source src="sounds/mp3/sounds_02.mp3" type="audio/mpeg"/>
+          <source src="sounds/ogg/sounds_02.ogg" type="audio/ogg"/>
+        </audio>
+      </div>
+
+      <div class="pad shape3">
+        <audio preload="auto" class="sound3" data-pad="3">
+          <source src="sounds/mp3/sounds_03.mp3" type="audio/mpeg"/>
+          <source src="sounds/ogg/sounds_03.ogg" type="audio/ogg"/>
+        </audio>
+      </div>
+
+      <div class="pad shape4">
+        <audio preload="auto" class="sound4" data-pad="4">
+          <source src="sounds/mp3/sounds_04.mp3" type="audio/mpeg"/>
+          <source src="sounds/ogg/sounds_04.ogg" type="audio/ogg"/>
+        </audio>
+      </div>
+
+      <div class="circle"></div>
+    </div>
+
+    <div class="level">
+      <h2>Level: 1</h2>
+    </div>
+    <div class="score">
+      <h2>Score: 0</h2>
+    </div>
+    <ul class="difficulty">
+      <li>
+        <input type="radio" class="difOpt" name="difficulty" value="2">Easy
+      </li>
+      <li>
+        <input type="radio" class="difOpt" name="difficulty" value="1">Normal
+      </li>
+      <li>
+        <input type="radio" class="difOpt" name="difficulty" value="0.5">Hard
+      </li>
+    </ul>
+
+    <div class="sButton">
+      <button class="start">Press to play</button>
+    </div>
+  </div>
+
+
+
+</body>
+</html>
